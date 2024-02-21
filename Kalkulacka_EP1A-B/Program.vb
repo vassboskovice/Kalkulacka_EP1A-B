@@ -7,8 +7,24 @@ Module Program
         Console.Clear()
         Console.CursorVisible = False
 
-        Menu()
-        Console.ReadKey()
+        Dim klavesa As ConsoleKeyInfo
+
+        Do
+            Console.Clear()
+            Menu()
+            klavesa = Console.ReadKey(True)
+            If klavesa.KeyChar = "1" Then
+
+            ElseIf klavesa.KeyChar = "2" Then
+
+            ElseIf klavesa.KeyChar = "3" Then
+
+            ElseIf klavesa.KeyChar = "4" Then
+
+            ElseIf klavesa.Key = ConsoleKey.Escape Then
+                Exit Do
+            End If
+        Loop
     End Sub
 
     Sub Menu()
