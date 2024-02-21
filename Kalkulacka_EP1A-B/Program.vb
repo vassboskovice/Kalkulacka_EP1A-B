@@ -14,17 +14,37 @@ Module Program
             Menu()
             klavesa = Console.ReadKey(True)
             If klavesa.KeyChar = "1" Then
-
+                Soucet()
             ElseIf klavesa.KeyChar = "2" Then
-
+                Rozdil()
             ElseIf klavesa.KeyChar = "3" Then
-
+                Soucin()
             ElseIf klavesa.KeyChar = "4" Then
-
+                Podíl()
             ElseIf klavesa.Key = ConsoleKey.Escape Then
                 Exit Do
             End If
         Loop
+    End Sub
+
+    Sub Soucet()
+        Console.WriteLine("Vybrán součet")
+        Console.ReadKey()
+    End Sub
+
+    Sub Rozdil()
+        Console.WriteLine("Vybrán rozdíl")
+        Console.ReadKey()
+    End Sub
+
+    Sub Soucin()
+        Console.WriteLine("Vybrán součin")
+        Console.ReadKey()
+    End Sub
+
+    Sub Podíl()
+        Console.WriteLine("Vybrán podíl")
+        Console.ReadKey()
     End Sub
 
     Sub Menu()
